@@ -406,7 +406,7 @@ ingress:
   ingressClassName: "nginx"
 
   # -- Hostname of the Layer 7 load balancer.
-  host: longhorn.mqgroup.org
+  host: longhorn.baityapp.online
 
   # -- Setting that allows you to enable TLS on ingress records.
   tls: true
@@ -415,7 +415,7 @@ ingress:
   secureBackends: false
 
   # -- TLS secret that contains the private key and certificate to be used for TLS. This setting applies only when TLS is enabled on ingress records.
-  tlsSecret: longhorn.mqgroup.org-tls
+  tlsSecret: longhorn.baityapp.online-tls
 
   # -- Default ingress path. You can access the Longhorn UI by following the full ingress path {{host}}+{{path}}.
   path: /
