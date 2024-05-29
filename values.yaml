@@ -433,7 +433,7 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/secure-backends: "true"
     nginx.ingress.kubernetes.io/auth-url: "https://oauth2.baityapp.online/oauth2/auth"  # Địa chỉ của OAuth2 Proxy
-    nginx.ingress.kubernetes.io/auth-signin: "https://oauth2.baityapp.online/oauth2/start?rd=$escaped_request_uri"  # Đường dẫn để bắt đầu quá trình xác thực
+    nginx.ingress.kubernetes.io/auth-signin: "https://oauth2.baityapp.online/oauth2/start?rd=https://longhorn.baityapp.online"  # Đường dẫn để bắt đầu quá trình xác thực
 
   # -- Secret that contains a TLS private key and certificate. Use secrets if you want to use your own certificates to secure ingresses.
   secrets:
